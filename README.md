@@ -57,10 +57,17 @@ Display gdb in `asm` layout.
 * Could be upper or lower: `add` or `ADD` is okay.
 * Use 'S' in the mnemonic to set the flags in the CPSR (Current Program Status Register) register.
 
-| Options \ Instructions | MOV | ADD | SUB | MUL |
-| :--: | :--: | :--: | :--: | :--: |
-| Immediate | Yes | Yes | Yes | No |
-| Register | Yes | Yes | Yes | Yes | 
+#### Overview
+| Instructions \ Options | Immediate | Register |
+| :--: | :--: | :--: |
+| MOV | Yes | Yes |
+| ADD | Yes | Yes |
+| SUB | Yes | Yes |
+| MUL | No | Yes |
+| AND | Yes | Yes |
+| ORR | Yes | Yes |
+| EOR | Yes | Yes |
+| MVN | No | Yes |
 
 #### Basics
 
@@ -74,6 +81,13 @@ Only load & store instructions can access memory. (ARM uses load-store architect
 
 * LDR: Load register.
 * STR: Store value from memory to register.
+
+#### Logical Operators
+
+* AND: `AND` operator.
+* ORR: `OR` operator.
+* EOR: `XOR` operator.
+* MVN: `NOT` operator.
 
 ### Registers
 
