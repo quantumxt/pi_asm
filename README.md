@@ -62,6 +62,19 @@ Display gdb in `asm` layout.
 | Immediate | Yes | Yes | Yes | No |
 | Register | Yes | Yes | Yes | Yes | 
 
+#### Basics
+
+* MOV: Move value from source to destination.
+* ADD: Add values.
+* SUB: Subtract values.
+* MUL: Multiply values.
+
+#### Memory
+Only load & store instructions can access memory. (ARM uses load-store architecture)
+
+* LDR: Load register.
+* STR: Store value from memory to register.
+
 ### Registers
 
 > ARMv7 register length: 32 Bits
