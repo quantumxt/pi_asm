@@ -54,7 +54,13 @@ Display gdb in `asm` layout.
 
 ### Mnemonics
 
-Could be upper or lower: `add` or `ADD` is okay.
+* Could be upper or lower: `add` or `ADD` is okay.
+* Use 'S' in the mnemonic to set the flags in the CPSR (Current Program Status Register) register.
+
+| Options \ Instructions | MOV | ADD | SUB | MUL |
+| :--: | :--: | :--: | :--: | :--: |
+| Immediate | Yes | Yes | Yes | No |
+| Register | Yes | Yes | Yes | Yes | 
 
 ### Registers
 
